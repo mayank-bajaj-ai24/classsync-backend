@@ -1,5 +1,8 @@
 // server.js
 require("dotenv").config();
+router.get("/test", (req, res) => {
+  res.json({ ok: true });
+});
 
 const express = require("express");
 const mongoose = require("mongoose");
