@@ -87,7 +87,7 @@ router.post("/mark-attendance", async (req, res) => {
       lat,
       lng
     );
-    const MAX_DISTANCE = 20; // meters
+    const MAX_DISTANCE = 35; // meters
 
     if (d > MAX_DISTANCE) {
       return res
